@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+  
+  <!-- 전체조회 -->
+  <select id="member_list"  resultType="vo.MemberVo">
+      	select * from member order by m_idx
+  </select> 
+  
+  <!-- m_id1건 조회 -->
+  <select id="member_one_m_id" parameterType="java.lang.String" resultType="vo.MemberVo">
+  		select * from member where m_id=#{ m_id }
+  </select>
+
+  <!-- 입력 -->
+  <insert id="member_insert" parameterType="vo.MemberVo">
+  	insert into member values
+  	(
+  		seq_member_m_idx.nextVal,
+  		#{ m_id },
+  		#{ m_pwd },
+  		#{ m_nick },
+  		#{ m_email },
+  		#{ m_ph },
+  		sysdate,
+  		#{ m_ip },
+  		#{ m_jumin },
+  		#{ m_pref_book },
+  		#{ m_age },
+  		#{ m_name },
+  		#{ m_zipcode },
+  		#{ m_addr },
+  		#{ m_grade }
+  	)
+  </insert>
+  
+  <!-- m_idx 1건조회 -->
+  <select id="member_one_m_idx"  parameterType="int" resultType="vo.MemberVo">
+     select * from member where m_idx=#{ m_idx }
+  </select>
+  
+  <!-- update -->
+  <update id="member_update" parameterType="vo.MemberVo">
+  	 update member 
+             set m_id=#{ m_id },
+            m_pwd=#{ m_pwd }, 
+  			m_nick=#{ m_nick },
+  			m_email=#{ m_email },
+  			m_ph=#{ m_ph },
+  			m_date=sysdate,
+  			m_ip=#{ m_ip },
+  			m_jumin=#{ m_jumin },
+  			m_pref_book=#{ m_pref_book },
+  			m_age=#{ m_age },
+  			m_name=#{ m_name },
+  			m_zipcode=#{ m_zipcode },
+  			m_addr=#{ m_addr },
+  			m_grade=#{ m_grade }
+  			where m_idx=#{ m_idx }
+  </update>
+  
+  <!-- 삭제 -->
+  <delete id="member_delete" parameterType="int">
+  	delete from member where m_idx=#{ m_idx }
+  </delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

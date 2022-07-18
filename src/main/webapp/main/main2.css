@@ -1,0 +1,264 @@
+@charset "UTF-8";
+	
+	*{
+		list-style: none;
+		text-decoration: none;
+		border-collapse: collapse;
+		margin: 0px;
+		padding: 0px;
+		color: black;
+	}
+	
+	h1{
+		font-size: 48px;
+	}
+	
+	.contents1{
+		font-size: 20px;
+	}
+
+	.contens2{
+		font-size: 10px;
+	}	
+	
+	.contents3{
+		font-size: 14px;
+		font-weight: 100;
+	}
+
+	.contents_bold{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	
+	/* ---▲공통요소▲--- */
+	
+	.result{
+		font-size: 24px;
+	}
+	
+	.intro_bg{
+		background-image: url("images/intro.png");
+		width: 100%;
+		height: 718px;
+	}
+	
+	.header{
+		display:flex;
+		width: 1280px;
+		margin: auto;
+		height: 86px;
+	}
+	
+	.nav{
+		display: flex;
+		justify-content:flex-end;
+		width: calc(1280px - 300px);
+		line-height: 86px;
+		color: #fff;
+	}
+	
+	.nav > li{
+		margin-left: 84px;
+	}
+	
+	.search_area{
+		width: 400px;
+		height: 40px;
+		background: rgba(0,0,0,0.5);
+		border-radius: 5px;
+		margin-top: 24px;
+	}
+	
+	.search_area > form > #search{
+		border: none;
+		background: rgba(0,0,0,0.0);
+		width: 250px;
+		height: 40px;
+		color: #fff;
+		padding-left:10px 
+	}
+	
+	.search_area > form > #search_button{
+		width: 150px;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	.intro_text{
+		width: 100%;
+		margin: 231px auto 231px auto;
+		text-align: center;
+	}
+	
+	.intro_text > h1,
+	.intro_text > h4{
+		color: #fff;
+	}
+	
+	.amount{
+		position:relative;
+		top: -66px;
+		display: flex;
+		width: 1280px;
+		background: #fff;
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+		margin: auto;
+		height: 132px;
+	}
+	
+	.amount > li{
+		flex: 1;
+		
+	}
+	
+	.amount > li > div{
+		text-align: center;
+		height: 57px;
+		margin-top: 37px;
+	}
+	
+	.amount > li:not(:last-child) > div {
+		border-right: 1px solid #E1E1E1;
+	}
+
+/* main_text */
+	
+	.main_text0{
+		width: 100%;
+		height: 601px;
+		background: #f1f2f2;
+		margin-top: -132px;
+	}
+	
+	.main_text0 > h1{
+		padding-top: 116px;
+		text-align: center;
+	}
+	
+	.main_text0 > .contents1{
+		text-align: center;
+	}
+	
+	.icons{
+		width: 1280px;
+		height: 302px;
+		display: flex;
+		margin: auto;
+	}
+	
+	.icons > li{
+		margin-top:49px;
+		flex:1;
+		height: 302px;
+		background: #fff;
+		text-align: center;
+	}
+	
+	.icons > li:not(:last-child){
+		margin-right: 20px;
+	}
+	
+	.icons > li > .icon_img{
+		margin-top: 36px;
+	}
+	
+	.icons .contents3{
+		width: 240px;
+		text-align: center;
+		margin: auto;
+	}
+	
+	.more{
+		width: 100px;
+		margin: 25px auto;
+		height: 30px;
+		background: blue;
+		color: #fff;
+		border-radius: 5px;
+		font-size: 12px;
+		line-height: 25px;
+		
+	}
+	
+	/* main_text1 */
+	
+	.main_text1{
+		width: 100%;
+		height: 659px;
+	}
+	
+	.main_text1 > h1{
+		padding-top: 50px;
+		text-align: center;
+	}
+	
+	.main_text1 > .contents1{
+		text-align: center;
+	}
+	
+	.service{
+		width: 1280px;
+		display: flex;
+		margin: 49px auto;
+		height: 427px;
+	}
+	
+	.service > .contents3{
+		padding: 20px;
+	}
+	
+	.service > .contents3 > h2{
+		margin-bottom: 27px;
+	}
+	
+	/* main_text2 */
+	
+	.main_text2{
+		width: 100%;
+		height: 418px;
+		background-image: url("image/contect.png");
+	}
+	
+	.main_text2 > ul{
+		display: flex;
+		padding-top: 138px;
+	}
+	
+	.main_text2 > ul > li{
+		flex: 1;
+		text-align: center;
+	}
+	
+	.main_text2 > ul > li > div > h1,
+	.main_text2 > ul > li > div{
+		color: #fff;
+	}
+	
+	.more2{
+		width: 220px;
+		height: 40px;
+		line-height: 40px;
+		margin: 16px auto;
+		border: 1px solid #fff;
+		cursor: pointer;
+	}
+	
+	footer{
+		display:flex;
+		background: #1f1f1f;
+		padding: 30px;
+	}
+	
+	footer > div:first-child{
+		text-align:center;
+		color: #fff;
+		flex: 3;
+		
+	}
+	
+	footer > div:last-child{
+		flex: 9;
+		color: #fff;	
+	}

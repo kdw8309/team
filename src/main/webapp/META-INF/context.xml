@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+	        auth="Container" 
+      		name="jdbc/oracle_test"
+      		type="javax.sql.DataSource"
+      		driverClassName="oracle.jdbc.driver.OracleDriver"
+      		factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+      		url="jdbc:oracle:thin:@localhost:1521/xe"
+      		username="team" password="team" 
+      		maxActive="5" maxIdle="10" maxWait="1"/>
+
+	<!-- <Resource
+		    auth="Container"
+		    name="jdbc/test"
+			driverClassName="com.mysql.jdbc.Driver" 
+			type="javax.sql.DataSource"
+			url="jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8"
+			username="username"
+			password="password"/> -->
+    		
+</Context>
